@@ -16,10 +16,12 @@ Playfair编写由明文、密钥、密文构成。
 下面开始分析Playfair加密过程，假设其密钥为” PlayfairPassword “。首先把密钥重复字符去除，就可以得到一串密钥” PLAYFIRSWOD ”
 
 然后构建一个5x5的矩阵数列，将处理好的密钥以由上至下、由左至右的方向依次置入矩阵栅格内，就能得到以下的列表。
-![passkey1](.\img\passkey.01.png)
+
+![passkey1](./img/passkey.01.png)
 
 然后将26个拉丁字母表，以字母表的顺序排列。去除在密钥中已出现的字符，同时也是将“ I ”和“ J ”视为同一字符。完成之后也同上面一样将其依次置入矩阵栅格内，如下
-![passkey2](.\img\passkey.02.png)
+
+![passkey2](./img/passkey.02.png)
 
 > ### 加密
 
